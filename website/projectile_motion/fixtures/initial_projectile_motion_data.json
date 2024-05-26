@@ -1,6 +1,6 @@
 [
     {
-      "model": "simulation.SimulationData",
+      "model": "projectile_motion.ProjectileMotionData",
       "pk": 1,
       "fields": {
         "height": 1,

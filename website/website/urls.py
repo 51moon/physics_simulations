@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import include, path
-from simulation.utils import simulation
+from projectile_motion.utils import projectile_motion_simulation
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('home.urls')),
-    path('simulation_image', simulation, name='simulation_image'), # trajectory image path
-    path('simulation', include('simulation.urls')),    
+    path('projectile_motion_image', projectile_motion_simulation, name='projectile_motion_image'), # trajectory image path
+    path('projectile_motion', include('projectile_motion.urls')),    
 ]

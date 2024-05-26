@@ -1,6 +1,6 @@
 from django.db import models
 
-class SimulationData(models.Model):
+class ProjectileMotionData(models.Model):
     height = models.FloatField() # m
     velocity = models.FloatField() # m/s
     angle = models.FloatField() # °
