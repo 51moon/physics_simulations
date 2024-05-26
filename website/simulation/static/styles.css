@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input,
+.form-group label,
+button[type="submit"] {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    flex-shrink: 0;
+    max-width: 100%;
+    width: auto;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    width: 230px;
+}
+
+.form-group label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+}
