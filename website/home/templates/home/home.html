@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -12,17 +13,21 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron mt-5">
-                    <h1 class="display-4">Physics Simulations</h1>
-                    <p class="lead">Website description.</p>
+                    <h1 class="display-4">Projects Portfolio</h1>
+                    <p class="lead">This website shows various projects on the subject of physics.</p>
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Simulation Name</h5>
-              <p class="card-text">Simulation description.</p>
+                <a href="{% url 'projectile_motion' %}">
+                    <h5 class="card-title">Projectile Motion</h5>
+                </a>
+              <p class="card-text">This project displas an interactive simulation of an inclined projectile motion with air resistance in a web application.</p>
             </div>
-            <img src="..." class="card-img-bottom" alt="...">
+            <a href="{% url 'projectile_motion' %}">
+                <img src="{% static 'images/projectile_motion_screenshot.png' %}" class="card-img-bottom" style="width:600px;" alt="Screenshot">
+            </a>
           </div>
     </div>
 </body>
