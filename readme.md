@@ -18,8 +18,13 @@
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
+3. Migrations
+   ```sh
+   cd website
+   python manage.py migrate
+   ```
 
-3. Run server
+4. Run server
    ```sh
    python manage.py runserver 8080
    ```
